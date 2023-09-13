@@ -52,7 +52,9 @@ a:hover {
 }
 
 #intro {
-    padding: 4rem 0rem 10rem 0rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p {
@@ -97,7 +99,7 @@ a:hover {
 nav {
     font-family: var(--mono);
     font-size: 80%;
-    padding: 1.5rem 0;
+    padding: 4rem 1rem;
 }
 
 nav h1 a {
@@ -196,5 +198,6 @@ footer p small {
     #intro {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 4rem 0rem 10rem 0rem;
     }
 }
