@@ -1,15 +1,16 @@
 :root {
     --black: #171321;
-    --blue: #2C96BF;
-    --light-blue: #2C96DF;
+    --pink: #e310cb;
+    --hot-pink: #ff17e4;
     --light-brown: #BF895A;
-    --dark-brown: #592816;
+    --plum: #4b0d49;
     --beige: #F2C0A2;
-    --red: #D94B2B;
+    --red: #86fbfb;
     --white: #f7f8fa;
     --font-size: 1.3rem;
     --sans: 'Oxygen', sans-serif;
     --mono: 'Oxygen Mono', monospace;
+    --border-gridient: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 1) 100%);
 }
 
 html {
@@ -42,11 +43,11 @@ h6 {
 }
 
 a {
-    color: var(--blue);
+    color: var(--pink);
 }
 
 a:hover {
-    color: var(--beige);
+    color: var(--hot-pink);
     text-decoration: none;
 }
 
@@ -76,12 +77,12 @@ a:hover {
 }
 
 #contact {
-    background-color: var(--dark-brown);
+    background-color: var(--plum);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 #contact p {
@@ -90,7 +91,7 @@ a:hover {
 }
 
 #contact p:last-child {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 nav {
@@ -122,11 +123,11 @@ nav li:first-child {
 nav a {
     text-decoration: none;
     color: var(--white);
-    dispay: block;
+    display: block;
 }
 
 nav a:hover {
-    color: var(--blue);
+    color: var(--pink);
 }
 
 nav [class*="fa-"] {
@@ -135,23 +136,26 @@ nav [class*="fa-"] {
 
 nav h1 [class*="fa-"] {
     font-size: 100%;
-    color: var(--blue);
+    color: var(--pink);
 }
 
 .button {
-    background-color: var(--blue);
+    background-color: var(--pink);
     padding: 0.5rem;
     border-radius: 5px;
     color: var(--white);
+    text-decoration: none;
+    font-family: var(--mono);
 }
 
 .button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--hot-pink);
     color: var(--white);
 }
 
 footer {
     text-align: center;
+    padding: 4rem 0rem 4rem 0rem;
 }
 
 footer ul {
@@ -164,11 +168,16 @@ footer ul {
 }
 
 footer ul li {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 footer p small {
     font-size: 0.9rem;
+}
+
+.gradient-divider {
+    height: 0.25rem;
+    background: var(--border-gridient);
 }
 
 @media(min-width: 850px) {
