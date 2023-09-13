@@ -137,6 +137,11 @@ nav [class*="fa-"] {
     color: var(--aqua);
 }
 
+nav [class*="fa-"]:hover {
+    font-size: 150%;
+    color: var(--hot-pink);
+}
+
 nav h1 [class*="fa-"] {
     font-size: 100%;
     color: var(--pink);
