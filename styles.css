@@ -229,6 +229,39 @@ article {
     border-radius: 10px;
 }
 
+img {
+    width: 100%;
+}
+
+@media(min-width: 550px) {
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #projects article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+
+    #projects img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    #projects .text {
+        order: 2;
+        text-align: right;
+        grid-column: 5/11;
+        grid-row: 1/2;
+    }
+
+    #projects ul {
+        justify-content: flex-end;
+    }
+}
+
 /* Footer section */
 footer {
     text-align: center;
